@@ -1,5 +1,4 @@
 <?php
-session_start();
 include('fechas.php');
 
 // Realizamos la conexion a la base de datos usada.
@@ -17,7 +16,6 @@ switch(true){
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         $response = curl_exec($curl);
         curl_close($curl);
-        $_SESSION["peticion"] = true;
         echo $response;
     break;
     // Si la fecha no se ha calculado anteriormente, hacemos la petición a la API para hacer los calculos.
@@ -33,7 +31,6 @@ switch(true){
         curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($datos));
         $response = curl_exec($curl);
         curl_close($curl);
-        $_SESSION["peticion"]=true;
         echo $response;
     break;
     

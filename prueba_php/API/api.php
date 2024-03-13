@@ -1,5 +1,4 @@
 <?php
-session_start();
 include 'config.php';
 include '../fechas.php';
 header("Access-Control-Allow-Origin: *");

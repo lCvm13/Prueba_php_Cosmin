@@ -1,12 +1,3 @@
-<?php
-// Iniciamos sesión para el usuario
-session_start();
-
-//incluimos archivo de funciones
-
-include("funciones.php");
-
-?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -50,8 +41,8 @@ include("funciones.php");
                 </div>
                 <div class="contenedorInfo">   
                         <h3>CONTADOR 2</h3>
-                        <p class="power">Power: <?php ?> kW</p>
-                        <p class="energy">Energy: <?php  ?> kWh</p>
+                        <p class="power">Power: kW</p>
+                        <p class="energy">Energy: kWh</p>
                 </div>
             </aside>
             <section>
@@ -81,28 +72,3 @@ include("funciones.php");
         <script src="./js/script.js"></script>
     </body>
 </html>
-
-
-
-<?php
-
-
-
-
-/*
-    $curl = curl_init();
-    $url = 'http://localhost/prueba_php/API/api.php';
-    $usuarios = array(
-        'nombre' => 'Segundo nuevo usuario'
-    );
-    curl_setopt($curl, CURLOPT_URL, $url);
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($curl, CURLOPT_POST, true);
-    curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($usuarios));
-    $response = curl_exec($curl);
-    curl_close($curl);
-    var_dump($response);
-
-*/
-    //<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
-?>
